@@ -61,6 +61,9 @@ color: #FFFFFF;
 box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
 border-radius: 10px;
 }
+.tryItFree:hover{
+  cursor: pointer;
+}
 .signUp{
   width: 75%;
   height: 65.8%;
@@ -95,12 +98,36 @@ color: #FFFFFF;
   width: 85%;
   height: 11.8%;
 }
+.firstNameInput{
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border: none;
+}
 .lastName{
   background: #FFFFFF;
   border: 1px solid #5E54A4;
   border-radius: 5px;
   width: 85%;
   height: 11.8%;
+}
+.lastNameInput{
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border: none;
+  display: flex;
+  
+}
+.lastNameInput::placeholder{
+  font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 26px;
+letter-spacing: 0.25px;
+color: #3D3B48;
+mix-blend-mode: normal;
+opacity: 0.75;
 }
 .email{
   background: #FFFFFF;
@@ -109,12 +136,24 @@ color: #FFFFFF;
   width: 85%;
   height: 11.8%;
 }
+.emailInput{
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border: none;
+}
 .password{
   background: #FFFFFF;
   border: 1px solid #5E54A4;
   border-radius: 5px;
   width: 85%;
   height: 11.8%;
+}
+.passwordInput{
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border: none;
 }
 .submit{
   background: #38CC8B;
@@ -126,6 +165,10 @@ border-radius: 5px;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+.submit:hover{
+  cursor: pointer;
+  opacity: 0.5;
 }
 .submitChild{
   font-family: 'Poppins';
@@ -144,6 +187,12 @@ color: #FFFFFF;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+.termsAndServices2{
+color: #FF7979;
+}
+.termsAndServices2:hover{
+cursor: pointer;
 }
 .signUp{
 display: flex;

@@ -16,12 +16,12 @@ function App() {
       <div className='tryItFreeChild'><span className='days7'>Try it free 7 days</span> <span className='then'> then $20/mo.thereafter</span> </div>
     </div>
     <div className='signUp'>
-      <div className='firstName'></div>
-      <div className='lastName'></div>
-      <div className='email'></div>
-      <div className='password'></div>
+      <div className='firstName'><input className='firstNameInput'></input></div>
+      <div className='lastName'><input className='lastNameInput' placeholder='Last name'></input></div>
+      <div className='email'><input className='emailInput'></input></div>
+      <div className='password'><input className='passwordInput'></input></div>
       <div className='submit'><p className='submitChild'>CLAIM YOUR FREE TRIAL</p></div>
-      <div className='termsAndServices'><span className='termsAndServices1'>By clicking the button, you are agreeing to our</span><span className='termsAndServices2'> Terms and Services</span></div>
+      <div className='termsAndServices'><span className='termsAndServices1'>By clicking the button, you are agreeing to our</span><span className='termsAndServices2'> &nbsp; Terms and Services</span></div>
     </div>
   </div>
   </div>
