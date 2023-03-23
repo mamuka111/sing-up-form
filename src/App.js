@@ -1,6 +1,17 @@
 import './App.css';
+import { useForm } from "react-hook-form";
 
 function App() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+
+  function registeri(data) {
+    console.log(data);
+  }
   return (
 
   <>
@@ -15,14 +26,20 @@ function App() {
     <div className='tryItFree'>
       <div className='tryItFreeChild'><span className='days7'>Try it free 7 days</span> <span className='then'> then $20/mo.thereafter</span> </div>
     </div>
-    <div className='signUp'>
-      <div className='firstName'><input className='firstNameInput'></input></div>
+    <form onSubmit={handleSubmit(registeri)} className='signUp'>
+      <div className='firstName'><input 
+        type="text"
+          placeholder="name"
+          {...register("name", { required: true })} className='firstNameInput'
+          />
+          {errors.name && <h1 className='firstNameEror' style={{ color: "red", fontSize: "15px" , textAlign: "right" }}>firstName can not be empty</h1>}
+          </div>
       <div className='lastName'><input className='lastNameInput' placeholder='Last name'></input></div>
       <div className='email'><input className='emailInput'></input></div>
       <div className='password'><input className='passwordInput'></input></div>
-      <div className='submit'><p className='submitChild'>CLAIM YOUR FREE TRIAL</p></div>
+      <button className='button' type="submit">CLAIM YOUR FREE TRIAL</button>
       <div className='termsAndServices'><span className='termsAndServices1'>By clicking the button, you are agreeing to our</span><span className='termsAndServices2'> &nbsp; Terms and Services</span></div>
-    </div>
+    </form>
   </div>
   </div>
   </>

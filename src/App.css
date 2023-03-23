@@ -201,3 +201,32 @@ justify-content: center;
     align-items: center;
     gap: 20px;
 }
+.button{
+  background: #38CC8B;
+box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+border-radius: 5px;
+width: 85%;
+height: 11.8%;
+font-size: 15px;
+color: #FFFFFF;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 26px;
+/* identical to box height, or 173% */
+
+letter-spacing: 1px;
+}
+.firstNameEror{
+  font-family: 'Poppins';
+font-style: italic;
+font-weight: 500;
+font-size: 11px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: right;
+
+color: #FF7979;
+}
