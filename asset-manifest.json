@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/sing-up-form/static/css/main.470ea8d1.css",
-    "main.js": "/sing-up-form/static/js/main.8b527764.js",
+    "main.css": "/sing-up-form/static/css/main.b8ab197a.css",
+    "main.js": "/sing-up-form/static/js/main.e4e09487.js",
     "static/media/abstract-blue-background-simple-design-for-your-website-free-vector.webp": "/sing-up-form/static/media/abstract-blue-background-simple-design-for-your-website-free-vector.0c7405782abccb519eb8.webp",
     "index.html": "/sing-up-form/index.html",
-    "main.470ea8d1.css.map": "/sing-up-form/static/css/main.470ea8d1.css.map",
-    "main.8b527764.js.map": "/sing-up-form/static/js/main.8b527764.js.map"
+    "main.b8ab197a.css.map": "/sing-up-form/static/css/main.b8ab197a.css.map",
+    "main.e4e09487.js.map": "/sing-up-form/static/js/main.e4e09487.js.map"
   },
   "entrypoints": [
-    "static/css/main.470ea8d1.css",
-    "static/js/main.8b527764.js"
+    "static/css/main.b8ab197a.css",
+    "static/js/main.e4e09487.js"
   ]
 }
