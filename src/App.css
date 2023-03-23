@@ -199,7 +199,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 4.2%;
 }
 .button{
   background: #38CC8B;
@@ -214,9 +214,11 @@ font-style: normal;
 font-weight: 600;
 font-size: 15px;
 line-height: 26px;
-/* identical to box height, or 173% */
-
 letter-spacing: 1px;
+}
+.button:hover{
+  cursor: pointer;
+  opacity: 0.5;
 }
 .firstNameEror{
   font-family: 'Poppins';
@@ -225,8 +227,26 @@ font-weight: 500;
 font-size: 11px;
 line-height: 16px;
 /* identical to box height */
+opacity: 0;
 
 text-align: right;
 
 color: #FF7979;
+}
+
+.lastNameEror{
+  font-family: 'Poppins';
+font-style: italic;
+font-weight: 500;
+font-size: 11px;
+line-height: 16px;
+/* identical to box height */
+opacity: 0;
+
+text-align: right;
+
+color: #FF7979;
+} 
+.active{
+  opacity: 1;
 }

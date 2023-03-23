@@ -12,6 +12,7 @@ function App() {
   function registeri(data) {
     console.log(data);
   }
+ 
   return (
 
   <>
@@ -29,12 +30,19 @@ function App() {
     <form onSubmit={handleSubmit(registeri)} className='signUp'>
       <div className='firstName'><input 
         type="text"
-          placeholder="name"
-          {...register("name", { required: true })} className='firstNameInput'
+          placeholder="first name"
+          {...register("name", { required: true })} className='lastNameInput'
           />
-          {errors.name && <h1 className='firstNameEror' style={{ color: "red", fontSize: "15px" , textAlign: "right" }}>firstName can not be empty</h1>}
+          <p className={errors.name ? "firstNameEror active":"firstNameEror"}>
+              First Name cannot be empty
+            </p>
           </div>
-      <div className='lastName'><input className='lastNameInput' placeholder='Last name'></input></div>
+      <div className='lastName'><input className='lastNameInput'   type="text"
+          placeholder="last name"
+          {...register("lastName", { required: true })}></input></div>
+            <p className={errors.lastName ? "lastNameEror active":"lastNameEror"}>
+              Last Name cannot be empty
+            </p>
       <div className='email'><input className='emailInput'></input></div>
       <div className='password'><input className='passwordInput'></input></div>
       <button className='button' type="submit">CLAIM YOUR FREE TRIAL</button>
